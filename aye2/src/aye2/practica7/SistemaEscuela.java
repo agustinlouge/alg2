@@ -48,6 +48,16 @@ public class SistemaEscuela {
 		Empleado a = new Empleado();
 		a.leer();
 		a.mostrar();
+	
+		//RAW types
+		ArrayList listaRaw = new ArrayList();
+		listaRaw.add(new Integer(10));
+		listaRaw.add(new String("asdas"));
+		for (Object x: listaRaw) {
+			System.out.println(x);
+		}
+	
+	
 	}
 
 }
