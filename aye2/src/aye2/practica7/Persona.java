@@ -2,6 +2,7 @@ package aye2.practica7;
 
 import java.util.Date;
 import java.util.Optional;
+import java.util.Scanner;
 
 public abstract class Persona {
 	protected String nombre;
@@ -61,5 +62,15 @@ public abstract class Persona {
 	}
 
 	public abstract int getIngresos();
+	
+	public void leer() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Ingrese el nombre de la persona");
+		nombre = s.nextLine();
+	}
+	
+	public void mostrar() {
+		System.out.println(nombre);
+	}
 	
 }

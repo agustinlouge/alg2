@@ -45,7 +45,9 @@ public class SistemaEscuela {
 		
 		per1 = emp1; //Se puede decir que ArrayList<Empleado> es SUBTIPO de ArrayList<Persona>
 	
-	
+		Empleado a = new Empleado();
+		a.leer();
+		a.mostrar();
 	}
 
 }
